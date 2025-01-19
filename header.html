@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fev-icon.png" type="image/x-icon">
+    <title>Video Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        
+
+        
+                <div class="image_holder">
+                <a href="#">   <img src="logo.png" alt="logo" title="logo_img" height="32" width="118">
+                </a>
+                </div>
+
+            <div class="list_item">
+                <ul>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Members</a></li>
+                    <li><a href="">Chat Rooms</a></li>
+                    <li><a href="">Downloads</a></li>
+                </ul>
+        
+    </div>
+        <div class="button d-btn-p">
+            <a href="#"><button class="btn btn1 ">Log In</button></a>
+            <a href="#"><button  class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a>
+        </div>
+
+        <div onclick="openNav()" id="main" class="line_icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+            <div  class="side_menu" id="mySidebar">
+                <a onclick="closeNav()">Close <i class="fa-solid fa-xmark"  ></i></a><br>
+
+                 <ul>
+
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Members</a></li>
+                    <li><a href="">Chat Rooms</a></li>
+                    <li><a href="">Downloads</a></li>
+                </ul>
+                <div class="button">
+                    <a href="#"><button class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a><br>
+                    <a href="#"><button class="btn btn1 btn-s " style="width: 277px;">Log In</button></a>
+                </div>
+
+            </div>
+
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.display = "inline";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+        .container{
+            display: flex;
+            height:64px;
+            width:100vw;
+            max-width: 1312px;
+            align-items: center;
+            border-bottom: 2px outset gray;
+            font-family: "Poppins", serif;
+            padding:6px 10px;   
+        }
+        img{
+            height:40px;
+            width: 140px;
+        }
+        .line_icon{
+            display:inline-block;
+           position:fixed;
+           right:10px;
+           top:auto;
+        }
+      .line_icon >  span{
+        display:flex;
+        height: 2px;
+        width:27px;
+        background-color: black;
+        margin: 5px;
+        border-radius: 20px; 
+        }
+        .d-btn-p{
+            position:fixed;
+           right:10px;
+           top:15px;
+        }
+        .btn{
+            border-color:  #1895D2;
+            color:#1895D2;
+            height: 42px;
+            padding: 6px 19px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Poppins", serif;
+            background-color: white;
+
+        }
+        .btn:hover{
+            background-color: #71c5ff;
+            border:2px #1895D2;
+
+        }
+    
+        .btn2{
+            background-color: #1895D2;
+            color:white;
+            
+        }
+        .btn1{
+            width:150px;
+             
+            }
+ 
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li>a{
+            margin:13px;
+            text-decoration: none;
+            color: #5C7483;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        li>a:hover{
+            text-decoration:underline;
+        }
+        .side_menu{
+            display: none;
+            height: 50vh;
+            width: 100vw;
+            position:absolute;
+            top:77px;
+            left:0px;
+
+        }
+        .side_menu>ul{
+            display: inline-block;
+            margin:10px 20px;
+            color:#1895D2;
+        }
+        .side_menu>ul>li{
+            margin:20px;
+        }
+
+
+        .side_menu>ul>li:hover{
+            color:#1895D2;
+
+        }
+        .side_menu>button{
+            position: absolute;
+        }
+        .side_menu>button>a{
+            margin: 2px;
+        }
+
+
+
+
+        @media screen and (min-width: 993px) {
+            .line_icon {
+                display:none;
+            }
+        }
+        @media screen and (max-width: 993px) {
+        
+            .list_item{
+                display: none;
+            }
+            .d-btn-p{
+                display: none;
+            }
+        }
+
+
+  
