@@ -30,6 +30,18 @@ body{
            left:75%;
            top:auto;
         }
+        @media screen and  (max-width: 800px){
+
+            .line_icon{
+                display:inline-block;
+           position:relative;
+           right:10px;
+           left:50%;
+           top:auto; 
+            }
+        }
+            
+      
       .line_icon >  span{
         display:flex;
         height: 2px;
@@ -335,6 +347,12 @@ margin:20px;
     align-items: center;
 
 }
+@media screen and (max-width: 700px){
+    .main-body{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .text,.photo>{
     width:386px;
     height: 555px;
@@ -342,8 +360,8 @@ margin:20px;
 
 }
 .photo>img{
-    width:650px;
-    height: 510px;
+    width:80%;
+    height: 50%;
 }
 .text,.photo{
     padding:30px;
