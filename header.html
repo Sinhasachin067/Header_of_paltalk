@@ -8,51 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-.main-body{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.text,.photo>{
-    width:386px;
-    height: 555px;
-    margin:3px;
-
-}
-.photo>img{
-    width:650px;
-    height: 510px;
-}
-.text,.photo{
-    padding:30px;
-}
-.text>h2{
-    font-size: 3rem;
-    margin: 5px 0px;
-}
-.text>p{
-    font-size: 1rem;
-    margin: 30px 0px; 
-}
-.photo>h2{
-    color: #1484c5;
-    font-size: 3rem;
-    /* padding:0px 50px 50px 110px; */
-    margin:-36px 0px 10px 110px;
-}
-.paragraph{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding:20px;
-}
-.paragraph>div{
-    border: 1px solid black;
-margin:5px;
-border-radius: 2px;
-overflow-x: hidden;
-}
+       
     </style>
 </head>
 <body>
@@ -64,10 +20,10 @@ overflow-x: hidden;
 
             <div class="list_item">
                 <ul>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Members</a></li>
-                    <li><a href="">Chat Rooms</a></li>
-                    <li><a href="">Downloads</a></li>
+                    <li><a class="list-ul-li" href="feature.html">Features</a></li>
+                    <li><a class="list-ul-li" href="">Members</a></li>
+                    <li><a class="list-ul-li" href="">Chat Rooms</a></li>
+                    <li><a class="list-ul-li" href="">Downloads</a></li>
                 </ul>
         
             </div>
@@ -85,7 +41,7 @@ overflow-x: hidden;
             <div  class="side_menu" id="mySidebar">
                 <a onclick="closeNav()">Close <i class="fa-solid fa-xmark"  ></i></a><br>
                  <ul>
-                    <li><a href="">Features</a></li>
+                    <li><a href="feature.html">Features</a></li>
                     <li><a href="">Members</a></li>
                     <li><a href="">Chat Rooms</a></li>
                     <li><a href="">Downloads</a></li>
@@ -97,50 +53,116 @@ overflow-x: hidden;
             </div>
 
     </div>
-     <main>
-     <div class="main">
-        <div class="main1 main-body">
-            <div class="main1-text text">
-                <h2> Meet New <br>Friends</h2>
-                <p>Start a free video, voice, or text group chat with anyone on any device</p>
-                <p><b>Available on iOS, Android, MacOS and Windows</b></p>
-                <div class="foot-btn">
-                    <a href="#"><button style="background: #ff745f;
-                 border: 1px solid #ff745f; padding: auto 100px; " 
-                 class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a>
-                     
-                 </div>
+    <main>
+        <div class="main">
+         <!-- section-1  -->
+            <div class="main1 main-body">
+               
+                <div class="main1-text text">
+                    <h2> Meet New <br>Friends</h2>
+                    <p>Start a free video, voice, or text group chat with anyone on any device</p>
+                    <p><b>Available on iOS, Android, MacOS and Windows</b></p>
+                    <div class="foot-btn">
+                        <a href="#"><button style="background: #ff745f;
+                    border: 1px solid #ff745f; padding: auto 100px; " 
+                    class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a>
+                        
+                    </div>
+                </div>
+                <div class="main1-photo photo">
+                    <img src="pic1.png" alt="pic1">
+                <h2 >1000 + Million Downloads</h2>
+                </div>
             </div>
-            <div class="main1-photo photo">
-                <img src="pic1.png" alt="pic1">
-             <h2 >1000 + Million Downloads</h2>
+
+         <!-- section-2  -->
+            <div class="main1 main-body">
+
+                <div class="main1-photo photo">
+                    <img src="pic2.png" alt="pic2">
+                </div>
+                <div class="main1-text text">
+                    <h2> Join chatrooms with millions of people</h2>
+                    <p>Paltalk allows you to join into topic-based chatrooms where you can collaborate, share, and talk with 5,000 live chat rooms.
+                        A place to meet up regularly, talk about anything, and hop from room to room.</p>
+                    
+                    <div class="foot-btn">
+                        <a href="#"><button style="background: #ff745f;
+                    border: 1px solid #ff745f; padding: auto 100px; " 
+                    class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a>
+                        
+                    </div>
+                </div>
+            </div>  
+            
+              <!-- section-3  -->
+            <div class="main1 main-body">
+               
+                        <div class="main1-text text">
+                            <h2> Video and audio chat</h2>
+                            <p>Paltalk allows video and audio chat and with 
+                                groups in public room or privatly in a one-to-one room with friends.</p>
+                       
+                            <div class="foot-btn">
+                                <a href="#"><button style="background: #ff745f;
+                            border: 1px solid #ff745f; padding: auto 100px; " 
+                            class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a>
+                                
+                            </div>
+                        </div>
+                        <div class="main1-photo photo">
+                            <img src="pic3.png" alt="pic1">
+                        <h2 >1000 + Million Downloads</h2>
+                        </div>
             </div>
+        
+                 <!-- section-4  -->
+               <div class="main1 main-body">
+        
+                        <div class="main1-photo photo">
+                            <img src="pic4.png" alt="pic2">
+                        </div>
+                        <div class="main1-text text">
+                            <h2>Direct message friends</h2>
+                            <p>Direct message friends with our convenient messenger
+                                 feature. Send unlimited messages and photos to your friends freely and securely.</p>
+                            
+                            <div class="foot-btn">
+                                <a href="#"><button style="background: #ff745f;
+                            border: 1px solid #ff745f; padding: auto 100px; " 
+                            class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a>
+                                
+                            </div>
+                        </div>
+               </div> 
+            
+
+
+            
+
+
+
+
+
+
+
+
         </div>
 
-        <div class="main1 main-body">
 
-            <div class="main1-photo photo">
-                <img src="pic2.png" alt="pic2">
-            </div>
-            <div class="main1-text text">
-                <h2> Join chatrooms with millions of people</h2>
-                <p>Paltalk allows you to join into topic-based chatrooms where you can collaborate, share, and talk with 5,000 live chat rooms.
-                     A place to meet up regularly, talk about anything, and hop from room to room.</p>
-                
-                <div class="foot-btn">
-                    <a href="#"><button style="background: #ff745f;
-                 border: 1px solid #ff745f; padding: auto 100px; " 
-                 class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a>
-                     
-                 </div>
-            </div>
-           
 
-        </div>
-            <div class="main2 main-body"></div>
-            <div class="main3 main-body"></div>
-            <div class="main4 main-body"></div>
-     </div>
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- <div class="paragraph">
             <div>
                 <p><b> Found Paltalk and it is really useful </b></p>
@@ -158,6 +180,10 @@ overflow-x: hidden;
             <div>7</div>
             <div>8</div>
         </div> -->
+
+
+
+
 
 
     </main>
@@ -257,14 +283,6 @@ overflow-x: hidden;
                 <div class="foot-div">Copyright © 2025 Paltalk, Inc. All rights reserved.</div>
 
             </footer>
-    <script>
-        function openNav() {
-          document.getElementById("mySidebar").style.display = "inline";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidebar").style.display = "none";
-        }
-        </script>
+  <script src="script.js"></script>
 </body>
 </html>

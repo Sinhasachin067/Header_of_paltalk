@@ -25,8 +25,9 @@ body{
         }
         .line_icon{
             display:inline-block;
-           position:fixed;
+           position:relative;
            right:10px;
+           left:75%;
            top:auto;
         }
       .line_icon >  span{
@@ -79,7 +80,6 @@ body{
             list-style-type: none;
         }
         li>a{
-            margin:13px;
             text-decoration: none;
             color: #5C7483;
             font-weight: 400;
@@ -89,6 +89,7 @@ body{
             text-decoration:underline;
         }
         .side_menu{
+            background-color: white;
             display: none;
             height: 50vh;
             width: 100vw;
@@ -119,20 +120,9 @@ body{
         }
 
 
-
-.footer{
-    width:100vw;
-    background-color: #1484c5;
-    color:#ffffffbf;
-    padding: 10px 25px;
-    position: relative;
-    font-size: 15px;
-    font-family: sans-serif;
-   
-}
-
 .foot-list{
     display: flex;
+    justify-content: space-around;
 
 }
 .foot-list>.list{
@@ -146,6 +136,7 @@ body{
 
 }
 .list>ul{
+
     display: flex;
     flex-direction: column;
 
@@ -234,26 +225,25 @@ margin:20px;
         } 
 
 /* main section  */
-
+a:active{
+color: #1484c5;
+}
 
 /* footer section */
 .footer{
     width:100vw;
     background-color: #1484c5;
     color:#ffffffbf;
-    padding: 10px 25px;
+    padding: 10px 0px;
     position: relative;
     font-size: 15px;
     font-family: sans-serif;
    
 }
 
-.foot-list{
-    display: flex;
 
-}
 .foot-list>.list{
-    margin: 10px;
+    margin: 30px;
     display: inline;  
 }
 .lang_option,.foot-div{
@@ -274,8 +264,11 @@ margin:20px;
 
 }
 .list>ul>li{
-    margin:5px;
+    margin:5px 0px;
 }
+.list-ul-li{
+    margin: 10px;
+} 
 p{
     display: flex;
      font-family: sans-serif;
@@ -334,5 +327,49 @@ margin:20px;
        
     }
 
+/* main-----------/ */
+.main-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
+}
+.text,.photo>{
+    width:386px;
+    height: 555px;
+    margin:3px;
+
+}
+.photo>img{
+    width:650px;
+    height: 510px;
+}
+.text,.photo{
+    padding:30px;
+}
+.text>h2{
+    font-size: 3rem;
+    margin: 5px 0px;
+}
+.text>p{
+    font-size: 1rem;
+    margin: 30px 0px; 
+}
+.photo>h2{
+    color: #1484c5;
+    font-size: 3rem;
+    margin:-36px 0px 10px 110px;
+}
+.paragraph{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding:20px;
+}
+.paragraph>div{
+ border: 1px solid black;
+margin:5px;
+border-radius: 2px;
+overflow-x: hidden;
+}
   
