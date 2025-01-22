@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    padding: 0;
+    padding: 0 1px;
     margin: 0;
 }
 body{
@@ -15,7 +15,7 @@ body{
             width:100vw;
             max-width: 1312px;
             align-items: center;
-            border-bottom: 2px outset gray;
+            border-bottom: 1px outset gray;
             font-family: "Poppins", serif;
             padding:6px 10px;   
         }
@@ -325,7 +325,7 @@ margin:20px;
 
 }.text {
     width: 100%;
-    /* padding: 30px; */
+    
 }
        
     }
@@ -336,6 +336,7 @@ margin:20px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin:86px 0px;
 
 }
 .photo>img{
@@ -345,6 +346,7 @@ margin:20px;
 .text{
     width:40%;
     padding:30px;
+   
 }
 .text>h2{
     font-size: 3rem;
@@ -380,4 +382,42 @@ overflow-x: hidden;
         padding:30px;
         text-align: center;
     }
+    .paragraph{
+        display: grid;
+        grid-template-columns:  auto auto;
+        padding:20px;
+    }
 } 
+@media screen and (max-width: 400px){
+    
+    .paragraph{
+        display: grid;
+        grid-template-columns:  auto;
+        padding:20px;
+    }
+} 
+
+.logo4{
+ text-align: center;
+ font-size: 2rem;
+ padding:60px 0px;
+}
+.paragraph{
+ display: grid;
+grid-area:span;
+height: min-content;
+box-sizing:border-box;
+
+
+}
+
+.padding{
+ padding:20px;
+  background-color: #F7FBFD;
+  border:1px solid black;
+ border-radius: 5px;
+ /* display: grid;
+ height: min-content; */
+ 
+
+}
