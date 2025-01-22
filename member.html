@@ -7,10 +7,121 @@
     <title>Video Chat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        
 
-    </style>
+        <style>
+            .center{
+                display: block;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: sans-serif;
+                background-image: linear-gradient(#e3a0ed, #ec84e8);
+            
+            }
+            
+
+            .adds{
+                height: 100px;
+            }
+            .text-white,a{
+                color: white;
+            } 
+             .text-white{
+                padding:10px;
+                font-size: 2rem;
+            }
+            .text-white>a{
+                height: 28px;
+                width:107px;
+                padding:6px 26px;
+                margin:10px 0px;
+                font-size: 13px;
+                border:2px solid #e3a0ed;
+                border-radius: 5px;
+                opacity: 1;
+                font-weight: 600;
+    background-color: #e3a0ed;
+    text-decoration: none;
+    box-shadow:  0 4px 6px -1px rgba(0, 0, 0, .1);
+}
+.text-white>a:hover{
+    opacity: 0.5;
+}
+.m-tb-10{
+    margin: 18px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding:3px;
+    text-decoration: underline;
+    position: relative;
+}
+.m-tb-10:hover{
+    text-decoration: none;
+}
+
+            .member-offer{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                position:relative;
+             
+                
+            }
+            .leader{
+                position: relative;
+            }
+            .leader>.p-top{
+                margin-bottom: .625rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 0 .625rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #5433ff, #20bdff 50%, #a5fecb);
+    letter-spacing: .05em;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+
+            }
+            .member-offer>img{
+         max-width: 100%;
+         height: auto;
+            }
+            .img-back{
+                position: absolute;
+                top: 0px;
+                left: 26px;
+                height: 87%;
+                border-radius: 50%;
+                width: 77%;
+            }
+            .img-front{
+                position: relative;
+                top: 6vh;
+                left: auto;
+                height: 15%;
+                border-radius: 50%;
+                width: 62%;
+
+            }
+@media screen and (max-width: 400px){
+    
+
+    .member-offer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+} 
+        </style>
 </head>
 <body>
    <div class="container">
@@ -55,90 +166,80 @@
 
     </div>
 
-
-    <!-- feature section  -->
-    <div class="feature">
-
-        <div class="feature-top feature-pro size">
-            <h2 class="font-size">Get the most out of Paltalk</h2>
-            <p>Discover why hundreds of millions people use Paltalk to chat.</p>
-        </div>
-
-
-        <div class="feature-bottom feature-pro">
-                <div class="feature-text-left contain ">
-
-                    <a href="#" class="anchor ">
-                        <div class="feature_icon text-icon shado">  
-                            <div ><img class="img-icon hover-color" height="20px" src="cam.png" alt="img"></div>
-                              <p clss="hover-color"><b>Video Chat Rooms </b></p>
-                              <p>Video chat with people in real time from anywhere in the world!
-                             You can turn on your video and experience meeting new people in our chat rooms.</p>
-                             <button class="feature-btn">Get Started for free</button>
-                    
-                        </div>
-                       
-                    </a>
-
-                    <a href="#" class=" anchor">
-                        <div class="feature_icon text-icon shado">  
-                            <div ><img class="img-icon" height="20px" src="cam.png" alt="img"></div> 
-                              <p><b>Video Chat Rooms </b></p>
-                              <p>Video chat with people in real time from anywhere in the world!
-                             You can turn on your video and experience meeting new people in our chat rooms.</p>
-                             <button  class="feature-btn">Get Started for free</button>
-                    
-                        </div>
-                       
-                    </a>
+    <div class="member center">
+        <div class="member-top ">
+            <div class="member-top-head">
+                <div class="adds">Adds</div>
+                <div class="member-top-text text-white">
+                        <h2>TOP MEMBERS</h2>
+                        <a class="active" 
+                        style="color:black;
+                        background-color: white;
+                        border:2px solid white;"
+                        href="">WEEK 	&gt;</a>
+                        <a href="">MONTH</a> <a href="">YEAR</a> 
+                        <p class=" m-tb-10">VIEW ALL LEADERSBOARDS</p>
+                </div>
 
 
+                <div class="member-offer center">
+                    <div class="leader">
+                        <p class="p-top">HIGHTEST XP</p>
+                          <div class="img-div">
+                            <img  class="img-front" src="lead1.webp" alt="front">
+                             <img  class="img-back" src="circle2.svg" alt="back">
+                            </div>
+                            <br><br>
+                        <p style="height:95px;font-weight: 900;" ><img src="crown.svg" alt="">Mong Dep...</p>
+                    </div>
 
 
+                    <div class="leader">
+                        <p class="p-top" style="background-image: linear-gradient(90deg, #ff512f, #dd2476);">MOST GUIFTED</p>
+                          <div class="img-div">
+                            <img  class="img-front" src="lead1.webp" alt="front">
+                             <img  class="img-back" src="circleRed.svg" alt="back">
+                            </div>
+                            <br><br>
+                        <p style="height:95px;font-weight: 900;" ><img src="crown.svg" alt="">Mong Dep...</p>
+                    </div>
 
 
-
-
-
+                    <div class="leader">
+                        <p class="p-top" style="background-image: linear-gradient(90deg, #ffe259, #ffa751);">HIGHTEST XP</p>
+                          <div class="img-div">
+                            <img  class="img-front" src="YELLOIMG.webp" alt="front">
+                             <img  class="img-back" src="YELLOW CIR.svg" alt="back">
+                            </div>
+                            <br><br>
+                        <p style="height:95px;font-weight: 900;" ><img src="crown.svg" alt="">Mong Dep...</p>
+                    </div>
 
 
                 </div>
-            
 
-            <div class="feature-photo">
-                <div class="back-holder">
-                    <img src="1_0.jpg" alt="img">
-                </div>
             </div>
 
-            <div class="feature-text-right contain">
-                <a href="#" class="anchor ">
-                    <div class="feature_icon text-icon shado">  
-                        <div ><img class="img-icon" height="20px" src="cam.png" alt="img"></div>
-                          <p><b>Video Chat Rooms </b></p>
-                          <p>Video chat with people in real time from anywhere in the world!
-                         You can turn on your video and experience meeting new people in our chat rooms.</p>
-                         <button  class="feature-btn">Get Started for free</button>
-                
-                    </div>
-                   
-                </a>
 
 
-                <a href="#" class="anchor ">
-                    <div class="feature_icon text-icon shado">  
-                        <div ><img class="img-icon" height="20px" src="cam.png" alt="img"></div>
-                          <p><b>Video Chat Rooms </b></p>
-                          <p>Video chat with people in real time from anywhere in the world!
-                         You can turn on your video and experience meeting new people in our chat rooms.</p>
-                         <button  class="feature-btn">Get Started for free</button>
+
+            <div class="memeber-top-bottom">
                 
-                    </div>
-                   
-                </a>
-                </div>
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
     </div>
+
+
+  
 
 
     <!-- footer section  -->

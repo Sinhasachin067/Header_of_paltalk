@@ -395,6 +395,10 @@ overflow-x: hidden;
         grid-template-columns:  auto;
         padding:20px;
     }
+    .member-offer{
+        display: flex;
+        flex-direction: column;
+    }
 } 
 
 .logo4{
@@ -420,4 +424,147 @@ box-sizing:border-box;
  height: min-content; */
  
 
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+ .font-size{
+    font-size: 2.5rem; 
+    font-family: sans-serif ;
+    margin:10px;
+ }
+ .size>p{
+    align-items: center;
+    justify-content: center;
+ }
+ .feature-bottom{
+   display:grid;
+   grid-template-columns: auto auto auto;
+    position: relative;
+ }
+ .feature-photo{
+    display: flex;
+    margin:20px 36px;
+ }
+ .back-holder{
+    height: 110vh;
+    width: 23.5vw;
+    position: relative;
+    padding:auto ;
+    background-image: url(iphone-layout.svg);
+    background-repeat: no-repeat;
+    padding:10px;
+
+ }
+ .back-holder>img{
+    height: 513px;
+    width: 100%;
+    position: relative;
+    top:50px;
+    bottom:200px;
+   
+ }
+ .text-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 200px;
+    align-items:end;
+    text-align:right;
+    border: 5px solid white;
+    border-radius: 20px;
+ }
+
+ .shado{
+    padding:20px;
+    margin: 20px;
+ }
+
+ .shado:hover{
+    color:#5ab9fb;
+    box-shadow:0 0 8px 1px rgb(88, 86, 86);
+ }
+ .anchor{
+    color:black;
+    text-decoration: none;
+ }
+ .feature-btn{
+    display: inline-flex;
+align-items: center;
+justify-content: center;
+background: #fff;
+border: 2px solid #5ab9fb;
+padding: 5px 12px;
+font-size: 14px;
+font-weight: 500;
+color: #5ab9fb;
+text-decoration: none;
+text-align: center;
+min-height: 38px;
+margin-top: 10px;
+border-radius: 71px;
+position: relative;
+}
+
+.feature-btn:hover{
+color:white;
+background-color: #5ab9fb ;
+}
+
+.img-icon{
+height: 55px;
+width: 45px;
+}
+/* .back-holder>img:hover{
+display: block;
+animation-name: slideUp;
+animation-duration:6s;
+animation-timing-function:ease;
+transform-style: preserve-3d;
+overflow: hidden;
+} */
+
+/* @keyframes slideUp {
+0%{
+position: relative;
+
+transform: scaley(1);
+}
+50% {
+transform: translateY(100%);
+transform: scaley(2);
+background-image: url(pic1.png);
+
+}
+
+60%,
+100% {
+transform: translateY(0);
+
+
+transform: scaley(3);
+}
+} */
+
+@media screen and (max-width: 993px) {
+
+.feature-bottom{
+display: flex;
+flex-direction: column;
+
+
+}
+.back-holder{
+width: 100%;
+}
+.back-holder>img{
+width:298px;
+}
 }
