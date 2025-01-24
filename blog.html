@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fev-icon.png" type="image/x-icon">
+    <title>Video Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .search-blog{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: #1994d2;
+            padding: 35px;
+            color:white;
+            font-family: sans-serif;
+        }
+        .blog-input{
+            padding: 6px 11px;
+            background: #ffffff;
+            height:30px;
+            width: 226px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #fff;
+            border-radius: 3px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+        }
+        .blog{
+            display: flex;
+            flex-direction: row;
+            padding:0px 30px 0px 10px;
+            font-family: sans-serif, Roboto, Helvetica, Arial, sans-serif;
+        }
+        .left-blog{
+            width:75%;
+            padding:10px 5px;
+            margin: 20px 3px;
+        }
+      
+        .left-content>p{
+            margin:40px 0px;
+        }
+        .left-content>a{
+            text-decoration: none;
+         
+        }
+        .left-content>.font40{
+            font-size: 26px;
+            font-weight: 300;
+        }
+        .left-content>.font40:hover{
+            color:#1994d2;
+        }
+       
+
+
+
+        .right-blog{
+            width: 20%;
+            padding:10px 5px;
+            margin: 53px 3px;
+        }
+
+        .blog-list{
+            color:black;
+            margin:20px 0px;
+        }
+        .blog-list>ul>li>a{
+            color:#1994d2;
+        }
+        ul>li>img{
+            height: 40px;
+            width:41px;
+        }
+
+        @media screen and  (max-width: 500px){
+
+            .blog{
+            display: flex;
+            flex-direction: column;
+        }
+        }
+            
+     
+    </style>
+</head>
+<body>
+   <div class="container">
+            <div class="image_holder">
+                <a href="header.html">   <img src="logo.png" alt="logo" title="logo_img" height="32" width="118">
+                </a>
+            </div>
+
+            <div class="list_item">
+                <ul>
+                    <li><a class="list-ul-li" href="feature.html">Features</a></li>
+                    <li><a class="list-ul-li" href="member.html">Members</a></li>
+                    <li><a class="list-ul-li" href="">Chat Rooms</a></li>
+                    <li><a class="list-ul-li" href="">Downloads</a></li>
+                    <li><a class="list-ul-li" href="blog.html">Blog</a></li>
+                </ul>
+        
+            </div>
+            <div class="button d-btn-p">
+                <a href="#"><button class="btn btn1 ">Log In</button></a>
+                <a href="#"><button  class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a>
+           </div>
+
+            <div onclick="openNav()" id="main" class="line_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
+        
+            <div  class="side_menu" id="mySidebar">
+                <a onclick="closeNav()">Close <i class="fa-solid fa-xmark"  ></i></a><br>
+                 <ul>
+                    <li><a href="feature.html">Features</a></li>
+                    <li><a href="member.html">Members</a></li>
+                    <li><a href="">Chat Rooms</a></li>
+                    <li><a href="">Downloads</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="button">
+                    <a href="#"><button class="btn  btn2">Download Paltalk for Free | <i class="fa fa-windows" aria-hidden="true"></i></button></a><br>
+                    <a href="#"><button class="btn btn1 btn-s " style="width: 277px;">Log In</button></a>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="search-blog">
+        <div><h2>Paltalk Blog - What's New on Paltalk!</h2></div>
+        <div ><input class="blog-input" type="text" placeholder="Search Blog"><i class="fa fa-search"></i></div>
+    </div>
+
+
+    <!-- blog section  -->
+<div class="blog">
+    <div class="left-blog">
+        <div class="left-content">
+            <span class="span">Jul 26, 2024 13:15 PM / Posted By Paltalk</span>
+            <a  class="font40" href=""><h2>Paltalk Go For Gold Contest</h2></a>
+            <p>The Summer Games are finally here! And Paltalk is getting
+                 in on the competition with the Go for Gold Contest, a
+                  competition designed to reward our most active users
+                   and vibrant chat rooms. Whether you’re a seasoned
+                    Paltalk veteran or a newcomer looking to make your
+                     mark, this is your chance to shine and win</p>
+            <a href="">Read more...</a>
+            <hr>
+        </div>
+
+        <div class="left-content">
+            <span class="span">Jul 26, 2024 13:15 PM / Posted By Paltalk</span>
+            <a  class="font40" href=""><h2>Paltalk Go For Gold Contest</h2></a>
+            <p>The Summer Games are finally here! And Paltalk is getting
+                 in on the competition with the Go for Gold Contest, a
+                  competition designed to reward our most active users
+                   and vibrant chat rooms. Whether you’re a seasoned
+                    Paltalk veteran or a newcomer looking to make your
+                     mark, this is your chance to shine and win</p>
+            <a href="">Read more...</a>
+            <hr>
+        </div>
+        <div class="left-content">
+            <span class="span">Jul 26, 2024 13:15 PM / Posted By Paltalk</span>
+            <a  class="font40" href=""><h2>Paltalk Go For Gold Contest</h2></a>
+            <p>The Summer Games are finally here! And Paltalk is getting
+                 in on the competition with the Go for Gold Contest, a
+                  competition designed to reward our most active users
+                   and vibrant chat rooms. Whether you’re a seasoned
+                    Paltalk veteran or a newcomer looking to make your
+                     mark, this is your chance to shine and win</p>
+            <a href="">Read more...</a>
+            <hr>
+        </div>
+        <div class="left-content">
+            <span class="span">Jul 26, 2024 13:15 PM / Posted By Paltalk</span>
+            <a  class="font40" href=""><h2>Paltalk Go For Gold Contest</h2></a>
+            <p>The Summer Games are finally here! And Paltalk is getting
+                 in on the competition with the Go for Gold Contest, a
+                  competition designed to reward our most active users
+                   and vibrant chat rooms. Whether you’re a seasoned
+                    Paltalk veteran or a newcomer looking to make your
+                     mark, this is your chance to shine and win</p>
+            <a href="">Read more...</a>
+            <hr>
+        </div>
+        <div class="left-content">
+            <span class="span">Jul 26, 2024 13:15 PM / Posted By Paltalk</span>
+            <a  class="font40" href=""><h2>Paltalk Go For Gold Contest</h2></a>
+            <p>The Summer Games are finally here! And Paltalk is getting
+                 in on the competition with the Go for Gold Contest, a
+                  competition designed to reward our most active users
+                   and vibrant chat rooms. Whether you’re a seasoned
+                    Paltalk veteran or a newcomer looking to make your
+                     mark, this is your chance to shine and win</p>
+            <a href="">Read more...</a>
+            <hr>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="right-blog">
+        <select class="lang" id="cars">
+            <option value="English">Monthly Archive</option>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="audi">English</option>
+        </select>
+
+        <div class="blog-list list">
+            <p style="font-size: 26px;">Categories</p> <br>
+            <ul>
+                <li><a href="">Paltalk for Desktop</a></li>
+                <li><a href="">Paltalk Mobile</a></li>
+                <li><a href="">Virtual Gifts</a></li>
+                <li><a href="">Search for Friends</a></li>
+                <li><a href="">Search for Rooms</a></li>
+                <li><a href="">Partner with Us</a></li>
+                <li><a href="">Merchandise</a></li>
+            </ul>
+            <br>
+            <p style="font-size: 26px;">Follow Us</p> <br>
+            <ul>
+                <li><img src="facebook-icon.png" alt="">
+                    <img src="twitter-icon.png" alt="">
+                    <img src="icon-instagram.png" alt="">
+                </li>
+            </ul>
+            
+
+            <br>
+            <div> 
+                <p style="font-size: 26px;">Contact Us</p> <br>
+                <p>You can reach us at:
+                    Paltalk, Inc.
+                    PO Box 326
+                    Jericho, NY 11753</p>
+            </div>
+<br>    
+            <div> 
+                <p style="font-size: 26px;">Need Support?</p> 
+                <p>Please visit official <a href="">Paltalk Support Site</a></p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+    <!-- footer section  -->
+    
+    <footer class="footer">
+      
+
+        
+        <div class="foot-list">
+            <div class="list">
+                <p style="font-size: 16px;">Paltalk</p> <br>
+                <ul>
+                    <li><a href="">Paltalk for Desktop</a></li>
+                    <li><a href="">Paltalk Mobile</a></li>
+                    <li><a href="">Virtual Gifts</a></li>
+                    <li><a href="">Search for Friends</a></li>
+                    <li><a href="">Search for Rooms</a></li>
+                    <li><a href="">Partner with Us</a></li>
+                    <li><a href="">Merchandise</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <p style="font-size: 16px;">About</p> <br>
+                <ul>
+                    <li><a href="">Paltalk for Desktop</a></li>
+                    <li><a href="">Paltalk Mobile</a></li>
+                    <li><a href="">Virtual Gifts</a></li>
+                    <li><a href="">Search for Friends</a></li>
+                    <li><a href="">Search for Rooms</a></li>
+                    
+                </ul>
+            </div>
+            <div class="list">
+                <p style="font-size: 16px;">Social</p> <br>
+                <ul>
+                    <li><a href="">Paltalk for Desktop</a></li>
+                    <li><a href="">Paltalk Mobile</a></li>
+                    <li><a href="">Virtual Gifts</a></li>
+                    <li><a href="">Search for Friends</a></li>
+                    <li><a href="">Search for Rooms</a></li>
+                    
+                </ul>
+                </div>
+            <div class="list">
+                <p style="font-size: 16px;">Support</p> <br>
+                <ul>
+                    <li><a href="">Paltalk for Desktop</a></li>
+                    <li><a href="">Paltalk Mobile</a></li>
+                    <li><a href="">Virtual Gifts</a></li>
+                    <li><a href="">Search for Friends</a></li>
+                    <li><a href="">Search for Rooms</a></li>
+                    
+                </ul>
+                </div>
+            <div class="list">
+                <p style="font-size: 16px;">Our Product</p> <br>
+                <ul>
+                    <li><a href="">Paltalk for Desktop</a></li>
+                    <li><a href="">Paltalk Mobile</a></li>
+                    <li><a href="">Virtual Gifts</a></li>
+                    <li><a href="">Search for Friends</a></li>
+                    <li><a href="">Search for Rooms</a></li>
+                    
+                </ul>
+                </div>
+            <div class="list">
+                <p style="font-size: 16px;">Legal</p> <br>
+                <ul>
+                    <li><a href="">Paltalk for Desktop</a></li>
+                    <li><a href="">Paltalk Mobile</a></li>
+                    <li><a href="">Virtual Gifts</a></li>
+                    <li><a href="">Search for Friends</a></li>
+                    <li><a href="">Search for Rooms</a></li>
+                    
+                </ul>
+                </div>
+        </div>
+        <div class="lang_option">
+            <select class="lang" id="cars">
+                <option value="English">&#9762;  English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+                <option value="audi">English</option>
+              </select>
+        
+        </div>
+        <div class="foot-div">Copyright © 2025 Paltalk, Inc. All rights reserved.</div>
+
+    </footer>
+
+
+ 
+    <script src="script.js"></script>
+
+</body>
+</html>
